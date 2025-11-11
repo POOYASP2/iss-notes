@@ -66,3 +66,28 @@ When we want to send data, we send a binary packet to the target and add a heade
 When the packet reaches its destination, the header changes. For example, when the packet reaches a router, the header is updated with new source and destination MAC addresses.
 
 > **Note:** ARP (Address Resolution Protocol) links Layer 3 addresses to Layer 2 addresses.
+
+### Layer 4 Transport - Service to service delivery
+
+1. Distinguish data steams
+2. This Layers uses ports for addressing
+
+   ![alt text](image-2.png)
+
+### Layer 5, 6 and 7
+
+Here we can say we have one Layer (like TCP/IP model).
+
+## Encapsulation and De-encapsulation
+
+![alt text](image-3.png)
+Each Layer adds its data which useful for its work. From the application layer to physical layer
+
+1. Segment - Adding TCP/PORT
+2. Packet - Adding IP addresses
+3. Frame - Adding MAC addresses
+4. Binary stream
+
+## ![alt text](image-4.png)
+
+![alt text](image-5.png)
