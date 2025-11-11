@@ -18,7 +18,7 @@ Now we have devices for networking.
    1. Provides a traffic control point (security, filtering, redirecting).
    2. Routers have **routing tables**, which are used for all the networks a router knows about.
 
-![alt text](image.png)  
+![alt text](attachments/image.png)  
 _Hierarchy of routers_
 
 > **Note:** We have two terms: **switching** and **routing**. Switching means moving data within a network, and routing means moving data between networks. Why mention this? Because other devices use these methods too—it’s not mandatory to have only routers and switches (even virtual ones).
@@ -43,12 +43,12 @@ This layer puts bits on the wire and receives bits from the wire. Anything conne
 
 Layer 2 uses MAC addresses for hop‑to‑hop delivery.
 
-![alt text](hop-to-hop.png)  
+![alt text](attachments/hop-to-hop.png)  
 _Hop‑to‑Hop delivery_
 
 **Question:** Once we understand hop‑to‑hop delivery, who ensures that our packet reaches its destination?
 
-![alt text](image-1.png)
+![alt text](attachments/image-1.png)
 
 ### Layer 3 (Network Layer) — End‑to‑End Delivery
 
@@ -72,7 +72,7 @@ When the packet reaches its destination, the header changes. For example, when t
 1. Distinguish data steams
 2. This Layers uses ports for addressing
 
-   ![alt text](image-2.png)
+   ![alt text](attachments/image-2.png)
 
 ### Layer 5, 6 and 7
 
@@ -80,7 +80,7 @@ Here we can say we have one Layer (like TCP/IP model).
 
 ## Encapsulation and De-encapsulation
 
-![alt text](image-3.png)
+![alt text](attachments/image-3.png)
 Each Layer adds its data that is useful for its work. From the application layer to physical layer
 
 1. Segment - Adding TCP/PORT
@@ -88,6 +88,6 @@ Each Layer adds its data that is useful for its work. From the application layer
 3. Frame - Adding MAC addresses
 4. Binary stream
 
-## ![alt text](image-4.png)
+## ![alt text](attachments/image-4.png)
 
-![alt text](image-5.png)
+![alt text](attachments/image-5.png)
