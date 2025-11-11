@@ -2,46 +2,67 @@
 
 ## Here are some networking recaps. I’m trying to cover everything I need for ISS.
 
-No we have devices for networking.
+Now we have devices for networking.
 
 ### Devices
 
-1.  Repeater: amplifies the signal (regenerates).
-2.  Hub: multi-port repeaters (broadcasting).
-3.  Bridge: sit between hub-connected hosts.
-    1.  Only has two ports.
-    2.  learns which hosts are on each side.
-4.  Switches: combination of hubs and bridges. facilitate communication **within** a network.
-    1.  multi ports.
-    2.  learns which hosts are on each port. (How?? with creating a **hierarchy** in networks and the entire internet)
-5.  Router: facilitate communication **between** networks.
-    1.  provide traffic control point (security, filtering, redirecting)
-    2.  routers have **routing tables** which are used for all the networks a router knows about.
+1. **Repeater:** Amplifies the signal (regenerates).
+2. **Hub:** A multi-port repeater (broadcasting).
+3. **Bridge:** Sits between hub-connected hosts.
+   1. Only has two ports.
+   2. Learns which hosts are on each side.
+4. **Switches:** A combination of hubs and bridges. Facilitates communication **within** a network.
+   1. Multiple ports.
+   2. Learns which hosts are on each port. (How? By creating a **hierarchy** in networks and across the entire internet.)
+5. **Router:** Facilitates communication **between** networks.
+   1. Provides a traffic control point (security, filtering, redirecting).
+   2. Routers have **routing tables**, which are used for all the networks a router knows about.
 
-![alt text](image.png)
-_hierarchy of routers_
+![alt text](image.png)  
+_Hierarchy of routers_
 
-> **Note:** we have two terms, **switching** and **routing**. switching means moving data within a network and routing means moving data between networks. why I mention this? because other devices use this method too it is not mandatory we have just router and switches (even virtual ones).
+> **Note:** We have two terms: **switching** and **routing**. Switching means moving data within a network, and routing means moving data between networks. Why mention this? Because other devices use these methods too—it’s not mandatory to have only routers and switches (even virtual ones).
 
 ### OSI model
 
-Two host share data over. must hosts follow some rules.
-Each layer provide and has specific purpose.
+Two hosts share data over a network. Most hosts follow some rules.  
+Each layer provides and has a specific purpose.
 
-### Layer 1 (physical layer) - transporting bits
+### Layer 1 (Physical Layer) — Transporting Bits
 
-Fiber and wifi for example. repeater is a layer one device.
+Examples include fiber and Wi‑Fi. A repeater is a Layer 1 device.
 
-### Layer 2 Data link - Hop to Hop delivery
+### Layer 2 (Data Link Layer) — Hop‑to‑Hop Delivery
 
-#### devices:
+#### Devices
 
-- **NICs** (like network interface cards or WIFI access card)
+- **NICs** (network interface cards or Wi‑Fi adapters)
 - **Switches**
 
-Puts bits on the wire and receives bits from the wire. Anything which connected to the wire be the layer 2 devices (NIC - network interface cards, wifi access card)
+This layer puts bits on the wire and receives bits from the wire. Anything connected to the wire is a Layer 2 device (e.g., NIC, Wi‑Fi card).
 
-The layer 2 uses MAC address for Hop top Hop delivery.
+Layer 2 uses MAC addresses for hop‑to‑hop delivery.
 
-![alt text](hop-to-hop.png)
-_Hop to Hop delivery_
+![alt text](hop-to-hop.png)  
+_Hop‑to‑Hop delivery_
+
+**Question:** Once we understand hop‑to‑hop delivery, who ensures that our packet reaches its destination?
+
+![alt text](image-1.png)
+
+### Layer 3 (Network Layer) — End‑to‑End Delivery
+
+Delivery happens using IP addresses (with routers).
+
+#### Devices
+
+- Routers
+- Hosts
+- Anything with an IP address
+
+**Question:** Why do we need MAC addresses when we have IP addresses?
+
+When we want to send data, we send a binary packet to the target and add a header that contains the IP addresses of the source and destination for Layer 3, and the MAC addresses of the source and the gateway router for Layer 2.  
+When the packet reaches its destination, the header changes. For example, when the packet reaches a router, the header is updated with new source and destination MAC addresses.
+
+> **Note:** ARP (Address Resolution Protocol) links Layer 3 addresses to Layer 2 addresses.
