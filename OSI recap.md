@@ -81,7 +81,7 @@ Here we can say we have one Layer (like TCP/IP model).
 ## Encapsulation and De-encapsulation
 
 ![alt text](image-3.png)
-Each Layer adds its data which useful for its work. From the application layer to physical layer
+Each Layer adds its data that is useful for its work. From the application layer to physical layer
 
 1. Segment - Adding TCP/PORT
 2. Packet - Adding IP addresses
