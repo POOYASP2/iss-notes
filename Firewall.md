@@ -40,3 +40,10 @@ Note: The higher the protection level, the fewer functionalities can be provided
 
 > Because allowing only authorized traffic through the firewall ensures that every connection entering or leaving the trusted network is **inspected**, **controlled**, and **compliant** with the organization’s security policies.  
 > Unauthorized traffic could bypass these controls and introduce malware, attacks, data leaks, or unknown communication channels, which would compromise the security and integrity of the internal network.
+
+**Q -** What are the types of authorization policies in the firewall?
+
+> 1. Whitelisting: All that is not explicitly permitted is forbidden.
+> 2. BlackListing: All that is not explicitly forbidden is permitted.
+
+**Q -** What are characteristics of whitelisting policy in firewalls?
