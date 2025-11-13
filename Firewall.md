@@ -16,6 +16,10 @@
 
 > An egress firewall is a firewall configuration that inspects and controls outgoing network traffic from the trusted network toward an untrusted network (from the inner to the outer network). The purpose of this configuration is to control user actions within a network, such as determining which sites a user can access, preventing users from uploading sensitive information to the external network, or blocking the download of potentially dangerous files.
 
+**Q -** Why we can not always have clear distinguish between ingress and egress?
+
+> Because classification between egress and ingress is straightforward for **channel-based** services such as TCP applications, but for **message-based** services such as UDP applications we do not have this clear distinction, and the firewall in this case is typically bidirectional.
+
 **Q -** What is the primary consideration in designing a firewall?
 
 > The primary consideration is the desired security level.
