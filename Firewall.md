@@ -15,3 +15,24 @@
 **Q -** What is an egress firewall?
 
 > An egress firewall is a firewall configuration that inspects and controls outgoing network traffic from the trusted network toward an untrusted network (from the inner to the outer network). The purpose of this configuration is to control user actions within a network, such as determining which sites a user can access, preventing users from uploading sensitive information to the external network, or blocking the download of potentially dangerous files.
+
+**Q -** What is the primary consideration in designing a firewall?
+
+> The primary consideration is the desired security level.
+
+Note: The higher the protection level, the fewer functionalities can be provided.
+
+**Q -** What are the commandments of the firewall?
+
+> 1. The firewall must be only contact point of the internal network with the external one.
+> 2. Only the "authorized" traffic can traves the firewall.
+> 3. The firewall must be a highly secure system itself.
+
+**Q -** Why must the firewall be the only contact point between the internal network and the external network?
+
+> Because when we use a firewall, we want to have centralized control over all communications. If any nodes can access the external network through a different contact point rather than the firewall, we cannot have centralized control, and we will have some unmonitored and unfiltered communications which can create vulnerabilities for our trusted network.
+
+**Q -** Why must only authorized traffic traverse the firewall?
+
+> Because allowing only authorized traffic through the firewall ensures that every connection entering or leaving the trusted network is **inspected**, **controlled**, and **compliant** with the organization’s security policies.  
+> Unauthorized traffic could bypass these controls and introduce malware, attacks, data leaks, or unknown communication channels, which would compromise the security and integrity of the internal network.
