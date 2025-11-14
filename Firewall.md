@@ -47,3 +47,5 @@ Note: The higher the protection level, the fewer functionalities can be provided
 > 2. BlackListing: All that is not explicitly forbidden is permitted.
 
 **Q -** What are the characteristics of a whitelisting policy in firewalls?
+
+> 1. Because firewall opens only a few kinds of communications, this provides higher security.
