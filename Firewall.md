@@ -49,3 +49,11 @@ Note: The higher the protection level, the fewer functionalities can be provided
 **Q -** What are the characteristics of a whitelisting policy in firewalls?
 
 > 1. Because firewall opens only a few kinds of communications, this provides higher security.
+> 2. Difficult to manage, especially when users to get used to free connectivity. This needs to explain why something is no longer permitted.
+> 3. It is recommended.
+
+**Q -** What are the characteristics of a BlackListing policy in firewalls?
+
+> 1. Easier to manage.
+> 2. Lower security.
+> 3. determine what the problem is and then prevent that problem and forbidding that traffic.
